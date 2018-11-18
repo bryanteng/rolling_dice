@@ -7,9 +7,9 @@ def roll(num):
     index = 0
 
     while index < num:
-        rolls.append(random.randint(1,6))
+        x = random.randint(1,6)
+        rolls.append(x)
         index+=1
-    for x in rolls:
         average+= x
         print_roll(x)
         if x in rolls_dict:

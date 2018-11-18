@@ -1,13 +1,11 @@
 import random
 
-def roll():
+def roll(num):
     rolls= []
-    rolls.append(random.randint(1,6))
-    rolls.append(random.randint(1,6))
-    rolls.append(random.randint(1,6))
-    rolls.append(random.randint(1,6))
-    rolls.append(random.randint(1,6))
-    rolls.append(random.randint(1,6))
+    index = 0
+    while index < num:
+        rolls.append(random.randint(1,6))
+        index+=1
     return rolls
-    
-print(roll())
+
+print(roll(6))

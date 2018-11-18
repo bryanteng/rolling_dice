@@ -6,6 +6,7 @@ def roll(num):
     while index < num:
         rolls.append(random.randint(1,6))
         index+=1
-    return rolls
+    for x in rolls:
+        print("You rolled a " + str(x))
 
-print(roll(6))
+roll(6)

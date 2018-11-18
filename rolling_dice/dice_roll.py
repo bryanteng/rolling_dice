@@ -2,13 +2,16 @@ import random
 
 def roll(num):
     rolls= []
+    average = 0
+
     index = 0
     while index < num:
         rolls.append(random.randint(1,6))
         index+=1
     for x in rolls:
+        average+= x
         print_roll(x)
-
+    print("The average roll was " +str(average/num) + " in " +str(num)+ " rolls.")
 def print_roll(num):
     if num == 6:
         print("--------")
@@ -47,4 +50,4 @@ def print_roll(num):
         print("|       |")
         print("--------")
 
-roll(6)
+roll(input("Enter number of dices to roll: "))

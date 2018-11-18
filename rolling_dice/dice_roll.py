@@ -19,7 +19,7 @@ def roll(num):
 
     print("The average roll was " +str(average/num) + " in " +str(num)+ " rolls.")
     for key,val in rolls_dict.items():
-        print(str(key)+ " was rolled "+str(val) + " times")
+        print(str(key)+ " was rolled "+str(val) + " time(s)")
 
 
 
